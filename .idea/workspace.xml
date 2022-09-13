@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe552b86-7295-448c-a43a-7975675780ef" name="Changes" comment="">
+    <list default="true" id="fe552b86-7295-448c-a43a-7975675780ef" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/AddressDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/AddressDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/StandardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/StandardDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/StudentDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/data/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/data/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/data/Standard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/data/Standard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/data/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/data/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/JDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/JDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/util/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/util/DbConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +81,14 @@
       <option name="presentableId" value="Default" />
       <updated>1662954948766</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1662965305857</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662965305857</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,5 +101,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>

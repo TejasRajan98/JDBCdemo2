@@ -1,5 +1,6 @@
 package com.example.main;
 import com.example.dao.StandardDAO;
+import com.example.dao.StudentDAO;
 import com.example.data.Address;
 import com.example.data.Standard;
 import com.example.data.Student;
@@ -51,9 +52,12 @@ public class JDBCImpl {
         //call insert method to insert the value into student table
 
         StandardDAO standardDAO = new StandardDAO();
+        StudentDAO studentDAO = new StudentDAO();
         int generatedKey = 0;
+        int studentId = 0;
         try {
             generatedKey = standardDAO.insertIntoStandard(s1);
+            studentId = studentDAO.insertIntoStudent(student);
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -61,5 +65,6 @@ public class JDBCImpl {
             e.printStackTrace();
         }
         System.out.println("generatedKey =" + generatedKey);
+        System.out.println("studentId = " + studentId);
     }
 }

@@ -29,13 +29,30 @@ public class StandardDAO {
         if(rows == 1){
             //get generated id
             ResultSet generatedKeys = preparedStatement.getGeneratedKeys();
-            if(generatedKeys.next()){
+            if (generatedKeys.next()) {
                 generatedId = generatedKeys.getInt(1);
             }
         }
         return generatedId;
     }
+
     //update
     //delete
     //search
+    public int checkAndGetClassId(Standard standard) throws SQLException, ClassNotFoundException {
+        int classId = 0;
+        Connection connection = DbConnection.getConnection();
+        //class_id, class_name, section
+        String sql = "Select class_id from class_tbl where class_name = ? and section = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1, standard.getStandard());
+        preparedStatement.setString(2, standard.getSection());
+        ResultSet resultSet = preparedStatement.executeQuery();
+        if (resultSet.next()) {
+            classId = resultSet.getInt(1);
+        } else {
+            classId = insertIntoStandard(standard);
+        }
+        return classId;
+    }
 }

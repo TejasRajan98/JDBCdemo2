@@ -2,7 +2,6 @@ package com.example.data;
 
 public class Address {
     private String flatNo;
-
     private String buildingName;
 
     private String street;
